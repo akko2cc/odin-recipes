@@ -1,0 +1,185 @@
+body
+{
+    background-color: antiquewhite;
+}
+
+.content
+{
+    background: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+}
+
+.content h1
+{
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+.textcenter
+{
+    text-align: center;
+}
+
+.center
+{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagecenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+}
+  
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    width: 100%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    text-align: center;
+    width: 12rem;
+    margin: 1rem;
+}
+
+.card img
+{
+    width: 100%;
+    height: 10rem;
+    margin: 0;
+}
+
+.card a
+{
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: blue;
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.nolink
+{
+    color: black;
+}
+  
+/* Change the color of links on hover */
+.topnav a.link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/** FOR RECIPES **/
+.description
+{
+    width: 69%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credits
+{
+    margin-top:3rem;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+
+@media screen and (min-width: 2000px)
+{
+    .description
+    {
+        width: 50%;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1441px)
+{
+    .description
+    {
+        width: 55%;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1032px) {
+
+    .description
+    {
+        width: 80%;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .innercontent img
+    {
+        width: 80%;
+    }
+
+    .column {
+        width: 50%;
+        display: block;
+    }
+
+    .card
+    {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .card
+    {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+}
